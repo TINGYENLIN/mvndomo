@@ -1,5 +1,5 @@
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:23.0.1-jdk
 WORKDIR /app
-COPY target/demo0611-1.0-SNAP.jar app.jar
+COPY target/mvndemo-main-1.0-SNAP.jar app.jar
 EXPOSE 8080
 CMD ["java", "-jar", "app.jar"]
